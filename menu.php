@@ -15,6 +15,7 @@
 
 
             <?php
+            //evite erreur sql (demarre session si pas demarrée et fait rien si démarrée)
             if (session_status() == PHP_SESSION_NONE) {
                 session_start();
             }
@@ -23,9 +24,14 @@
 
             <nav>
                 <ul>
-                    <li><a href="index.php">📊 Tableau de bord</a></li>
-                    <?php if ($_SESSION['role_id'] == 1) : ?>
-                        <li><a href="gest-publications.php">✍️ Gestion des publications</a></li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.php">
+                            <i class= "fas fa_fw fa _tachometer-alt"></i>
+                            📊 Tableau de bord</a></li>
+                    
+                    <?php //donne la vue de gest-publications que a l'admin
+                    if ($_SESSION['role_id'] == 1) : ?>
+                        <li class="nav-item active"><a class="nav-link"  href="gest-publications.php">✍️ Gestion des publications</a></li>
                     <?php endif; ?>
                 </ul>
             </nav>
