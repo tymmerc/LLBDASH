@@ -45,8 +45,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['username'], $_POST['pa
         $_SESSION['username'] = $user['username'];
         $_SESSION['role_id'] = $user['role_id'];
 
-        logLogin($pdo, $username, $user['user_id'], 'success');
 
+
+        logLogin($pdo, $username, $user['user_id'], 'success');
+        
         $redirect = ($user['role_id'] == 1) ? "gest-publications.php" : "index.php";
         header("Location: $redirect");
         exit;

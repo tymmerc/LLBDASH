@@ -1,19 +1,17 @@
 <?php
 session_start();
 
-//vérifier si l'utilisateur est connecté
-if (!isset($_SESSION['role'])) {
-    //rediriger vers la page de connexion si l'utilisateur n'est pas connecté
+if (!isset($_SESSION['user_id'])) {
     header('Location: login.php');
     exit();
 }
 
-//vérifiez si l'utilisateur a le rôle approprié pour accéder à cette page
-if ($_SESSION['role'] !== 'admin') {
-    //redirigez vers une page d'erreur ou d'accès refusé
+if (!isset($_SESSION['role_id']) || $_SESSION['role_id'] != 1) {
+
     header('Location: access-denied.php');
     exit();
 }
+
 ?>
 
 <!DOCTYPE html>
