@@ -182,16 +182,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
                                         <p class="mt-3">Veuillez vérifier votre boîte de réception et cliquer sur le lien dans l'email.</p>
                                     </div>
                                 <?php endif; ?>
-                                
-                                <!-- Afficher les logs de débogage en mode développement -->
-                                <?php if (!empty($debugLog)): ?>
-                                    <div class="alert alert-info">
-                                        <h5>Logs de débogage:</h5>
-                                        <div style="max-height: 200px; overflow-y: auto; font-size: 0.8em;">
-                                            <?= $debugLog ?>
-                                        </div>
-                                    </div>
-                                <?php endif; ?>
 
                                 <form method="post">
                                     <div class="form-group">
