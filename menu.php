@@ -40,4 +40,5 @@
             </div>
 
         </ul>
-        <!-- End of Sidebar -->
+        <!-- NOTE POUR PLUS TARD : IL FAUT FAIRE UNE PAGE DE PROPOSITION D'ARTICLES POUR LE LECTEUR -->
+         
