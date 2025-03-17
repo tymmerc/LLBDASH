@@ -1,0 +1,14 @@
+# Ignorer les fichiers de log
+*.log
+
+# Ignorer les fichiers temporaires de l'éditeur
+*.swp
+
+# Ignorer le répertoire node_modules
+node_modules/
+
+# Ignorer un fichier spécifique
+config.txt
+
+#env
+.env
