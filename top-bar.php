@@ -21,6 +21,9 @@ if (isset($_SESSION['role_id'])) {  //verifie si role_id est défini dans la ses
         case 2:
             $_SESSION['avatar'] = "img/lect.png";
             break;
+        case 3: 
+            $_SESSION['avatar'] = "img/aggin.jpg";
+            break;
         default:
             $_SESSION['avatar'] = "img/default.png";
             break;

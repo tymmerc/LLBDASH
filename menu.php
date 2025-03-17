@@ -34,11 +34,11 @@
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
-            <!-- Sidebar Toggler (Sidebar) -->
+            <!-- Sidebar Toggler (Sidebar) 
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
+            </div>-->
 
         </ul>
-        <!-- NOTE POUR PLUS TARD : IL FAUT FAIRE UNE PAGE DE PROPOSITION D'ARTICLES POUR LE LECTEUR -->
+        <!-- NOTE POUR PLUS TARD : IL FAUT FAIRE UNE PAGE DE PROPOSITION D'ARTICLES POUR LE LECTEUR + une gestion de modif des mdp pour les deux  -->
          
